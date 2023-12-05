@@ -1,7 +1,7 @@
 from . import __version__ as app_version
 
 app_name = "gym"
-app_title = "GYM Management System"
+app_title = "GYM "
 app_publisher = "Karthik"
 app_description = "This is GYM app"
 app_email = "karthik.gb@promantia.com"

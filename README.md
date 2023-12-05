@@ -1,4 +1,4 @@
-## GYM Management System
+## GYM 
 
 This is GYM app
 
