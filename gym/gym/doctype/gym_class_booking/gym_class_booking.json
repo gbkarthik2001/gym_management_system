@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member}",
+ "creation": "2023-12-05 12:15:44.541241",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "class_type",
+  "column_break_xnmsd",
+  "booking_date",
+  "amended_from",
+  "member_details_section",
+  "member_hieght",
+  "member_weight",
+  "column_break_ophk6",
+  "calories"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Gym Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Class Type",
+   "options": "\nDance fitness\nBoxing",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Booking Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Class Booking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "member_hieght",
+   "fieldtype": "Float",
+   "label": "Member Hieght",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member_weight",
+   "fieldtype": "Float",
+   "label": "Member Weight",
+   "reqd": 1
+  },
+  {
+   "fieldname": "calories",
+   "fieldtype": "Float",
+   "label": "Calories",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xnmsd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "member_details_section",
+   "fieldtype": "Section Break",
+   "label": "Member Details"
+  },
+  {
+   "fieldname": "column_break_ophk6",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-06 15:52:48.186863",
+ "modified_by": "Administrator",
+ "module": "GYM",
+ "name": "Gym Class Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

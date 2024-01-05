@@ -12,7 +12,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/gym/css/gym.css"
-# app_include_js = "/assets/gym/js/gym.js"
+# app_include_js = "/assets/gym/js/comman.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/gym/css/gym.css"
@@ -24,6 +24,7 @@ app_license = "MIT"
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
 # webform_include_css = {"doctype": "public/css/doctype.css"}
+
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
@@ -114,6 +115,26 @@ app_license = "MIT"
 #	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
+override_doctype_class = {
+	"Bank": "gym.gym.doctype.gym_member.myBank.myBank"
+}
+
+
+
+doctype_js = {
+    "Bank": "public/js/bank.js",
+}
+
+
+
+
+
+
+
+
+
+
+
 # Document Events
 # ---------------
 # Hook on document methods and events
@@ -158,6 +179,13 @@ app_license = "MIT"
 # override_whitelisted_methods = {
 #	"frappe.desk.doctype.event.event.get_events": "gym.event.get_events"
 # }
+override_whitelisted_methods = {
+	"frappe.realtime.get_user_info": "gym.gym.doctype.gym_member.myBank.get_user_info"
+}
+  
+
+
+  
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,

@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{plane_name}",
+ "creation": "2023-12-05 12:20:20.178166",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "plane_name",
+  "difficulty_level",
+  "exercises",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "plane_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plane Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "difficulty_level",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Difficulty Level",
+   "reqd": 1
+  },
+  {
+   "fieldname": "exercises",
+   "fieldtype": "Table",
+   "label": "Exercises",
+   "options": "Gym Workout Plan Exercise",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Workout Plans",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Gym Member",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-06 16:07:57.363535",
+ "modified_by": "Administrator",
+ "module": "GYM",
+ "name": "Gym Workout Plans",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

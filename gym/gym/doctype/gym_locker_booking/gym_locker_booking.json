@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "autoname": "format:{locker_number}",
+ "creation": "2023-12-05 12:11:23.225499",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "locker_number",
+  "booking_date",
+  "remaining_lockers",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "locker_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Locker Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Gym Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Booking Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Locker Booking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "remaining_lockers",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Remaining Lockers",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-07 15:53:57.292262",
+ "modified_by": "Administrator",
+ "module": "GYM",
+ "name": "Gym Locker Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

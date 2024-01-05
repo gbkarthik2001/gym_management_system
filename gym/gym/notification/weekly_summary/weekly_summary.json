@@ -1,0 +1,27 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2023-12-08 10:56:26.863950",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Gym Workout Plans",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-12-08 10:56:26.863950",
+ "modified_by": "Administrator",
+ "module": "GYM",
+ "name": "Weekly summary",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Gym Admin"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Your weekly updates"
+}

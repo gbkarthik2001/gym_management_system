@@ -1,0 +1,3 @@
+[post_model_sync]
+gym.gym.doctype.gym_member.patches.set_regestration_status
+[pre_model_sync]
